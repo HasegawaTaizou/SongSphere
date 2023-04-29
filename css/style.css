@@ -41,6 +41,48 @@ header {
   font-size: 1.5rem;
 }
 
+main {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.search__title {
+  font-size: 2.25rem;
+  font-weight: normal;
+}
+
+.search__title::before {
+  content: "";
+  border-left: 3px solid var(--secondary-color);
+  padding-left: 16px;
+}
+
+.search__input {
+  width: 428px;
+  height: 52px;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  padding-left: 12px;
+}
+
+.search__input::placeholder {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  color: var(--primary-color);
+}
+
 footer {
   display: flex;
   justify-content: space-between;
