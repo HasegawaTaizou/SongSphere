@@ -5,3 +5,7 @@ header {
   background-color: var(--secondary-color);
   padding: 0px 32px;
 }
+
+#menu {
+  display: none;
+}
