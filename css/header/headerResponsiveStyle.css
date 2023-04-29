@@ -1,0 +1,22 @@
+@media (max-width: 1260px) {
+  .songsphere__navigation-container {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .songsphere__title-container {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  #menu {
+    font-size: 2rem;
+  }
+}

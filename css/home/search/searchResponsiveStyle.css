@@ -1,0 +1,37 @@
+@media (max-width: 1260px) {
+  .search-container {
+    border: 0;
+    border-bottom: 2px solid var(--secondary-color);
+    align-items: center;
+  }
+
+  .search__image {
+    width: 276px;
+    height: 246px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .search__title {
+    font-size: 1.5rem;
+  }
+
+  .search__title::before {
+    padding-left: 8px;
+  }
+
+  .search__input {
+    width: 232px;
+    height: 38px;
+  }
+
+  .search__input::placeholder {
+    font-size: 1rem;
+  }
+
+  .search__image {
+    width: 156px;
+    height: 156px;
+  }
+}

@@ -1,0 +1,27 @@
+@media (max-width: 1260px) {
+  .result-container {
+    margin: 32px 0px;
+  }
+
+  .result__error-text {
+    font-size: 2rem;
+  }
+
+  .result__error-image {
+    width: 276px;
+    height: 246px;
+  }
+}
+
+@media (max-width: 520px) {
+  .result__error-text {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0px 12px;
+  }
+
+  .result__error-image {
+    width: 156px;
+    height: 156px;
+  }
+}
