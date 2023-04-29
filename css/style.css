@@ -1,0 +1,42 @@
+body {
+  font-family: "Raleway", sans-serif;
+  color: var(--primary-color);
+  background-color: var(--background-color);
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 96px auto 136px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  padding: 0px 32px;
+}
+
+.songsphere__title-container {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.songsphere__title-container > i {
+  font-size: 1.5rem;
+}
+
+.title__text {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.navigations {
+  display: flex;
+  gap: 18px;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: var(--secondary-color);
+}
