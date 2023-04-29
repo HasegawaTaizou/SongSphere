@@ -42,17 +42,22 @@ header {
 }
 
 main {
-  max-width: 1440px;
-  width: 100%;
   display: flex;
   justify-content: center;
 }
 
+.content {
+  max-width: 1440px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
 .search-container {
-  margin-top: 48px;
+  padding-top: 48px;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  border-right: 2px solid var(--secondary-color);
 }
 
 .search__title {
@@ -81,6 +86,19 @@ main {
   font-family: "Raleway", sans-serif;
   font-size: 1.25rem;
   color: var(--primary-color);
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.result__error-text {
+  font-size: 2.25rem;
+  font-weight: normal;
 }
 
 footer {
