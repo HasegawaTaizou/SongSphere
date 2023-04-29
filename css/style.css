@@ -24,6 +24,7 @@ header {
   gap: 14px;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 
 .songsphere__title-container > i {
@@ -63,6 +64,7 @@ main {
 .search__title {
   font-size: 2.25rem;
   font-weight: normal;
+  user-select: none;
 }
 
 .search__title::before {
@@ -99,6 +101,7 @@ main {
 .result__error-text {
   font-size: 2.25rem;
   font-weight: normal;
+  user-select: none;
 }
 
 footer {
@@ -145,7 +148,7 @@ footer {
 }
 
 .social-media:hover {
-  background-color: #bcc2e56e;
+  background-color: #ff1ea9ec;
   transition: all 0.5s;
 }
 
