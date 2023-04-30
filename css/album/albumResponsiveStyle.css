@@ -1,0 +1,40 @@
+@media (max-width: 1260px) {
+  .albums-introdution {
+    border: 0;
+    border-bottom: 2px solid var(--secondary-color);
+    align-items: center;
+  }
+
+  .album__title {
+    margin-top: 32px;
+  }
+
+  .album__image {
+    width: 312px;
+    height: 264px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 450px) {
+  .album-container {
+    width: 232px;
+    height: 64px;
+    padding: 0px 12px;
+    gap: 0px;
+  }
+
+  .album__image {
+    width: 224px;
+    height: 224px;
+  }
+
+  .album-container > i {
+    font-size: 1.25rem;
+  }
+
+  .album__text {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+}

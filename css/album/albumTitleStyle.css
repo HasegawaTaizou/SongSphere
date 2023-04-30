@@ -1,0 +1,11 @@
+.album__title {
+  font-size: 2.25rem;
+  font-weight: normal;
+  user-select: none;
+}
+
+.album__title::before {
+  content: "";
+  border-left: 3px solid var(--secondary-color);
+  padding-left: 16px;
+}
