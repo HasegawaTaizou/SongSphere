@@ -4,6 +4,8 @@
   gap: 24px;
   justify-content: center;
   flex-wrap: wrap;
+  max-height: 600px;
+  overflow-y: scroll;
 }
 
 .music-container {
@@ -12,7 +14,7 @@
   align-items: center;
   gap: 24px;
   width: 372px;
-  height: 92px;
+  min-height: 92px;
   background-color: var(--secondary-color);
   border-radius: 4px;
 }
@@ -22,5 +24,7 @@
 }
 
 .music__text {
+  text-align: center;
   font-size: 1.5rem;
+  max-width: 75%;
 }

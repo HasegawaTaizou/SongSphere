@@ -6,7 +6,20 @@ export const searchArtist = async function () {
 
   const data = await response.json();
 
-  console.log(data);
+  let musics = data.artist.lyrics.item.map((music) => {
+    return {
+      name: music.desc,
+      link: music.url,
+    };
+  });
+
+  let albums = data.artist.albums.item.map((album) => {
+    return {
+      name: album.desc,
+      link: album.url,
+    };
+  });
+
   return {
     name: data.artist.desc,
     image: data.artist.pic_medium,
@@ -14,8 +27,8 @@ export const searchArtist = async function () {
     views: data.artist.rank.views,
     fans: data.artist.rank.uniques,
     score: data.artist.rank.points,
-    musics: data.artist.lyrics.item,
-    albums: data.artist.albums.item,
+    musics: musics,
+    albums: albums,
   };
 };
 
