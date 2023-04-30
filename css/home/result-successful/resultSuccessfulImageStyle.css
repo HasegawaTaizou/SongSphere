@@ -1,3 +1,4 @@
 .result__successful-image {
   grid-area: image;
+  border-radius: 50%;
 }

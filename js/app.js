@@ -92,10 +92,13 @@ const fillArtist = async function () {
     "result__additional-informations-container"
   );
 
-  const artistAdditionalInformationMusicContainer =
-    document.createElement("li");
+  const artistAdditionalInformationMusicContainer = document.createElement("a");
   artistAdditionalInformationMusicContainer.classList.add(
     "additional-information-container"
+  );
+  artistAdditionalInformationMusicContainer.setAttribute(
+    "href",
+    "./music.html"
   );
   const artistAdditionalInformationMusicIcon = document.createElement("i");
   artistAdditionalInformationMusicIcon.classList.add(faSolid);
@@ -111,10 +114,13 @@ const fillArtist = async function () {
     artistAdditionalInformationMusicText
   );
 
-  const artistAdditionalInformationAlbumContainer =
-    document.createElement("li");
+  const artistAdditionalInformationAlbumContainer = document.createElement("a");
   artistAdditionalInformationAlbumContainer.classList.add(
     "additional-information-container"
+  );
+  artistAdditionalInformationAlbumContainer.setAttribute(
+    "href",
+    "./album.html"
   );
   const artistAdditionalInformationAlbumIcon = document.createElement("i");
   artistAdditionalInformationAlbumIcon.classList.add(faSolid);
