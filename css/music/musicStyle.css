@@ -1,0 +1,7 @@
+.musics-introdution {
+  border-right: 2px solid var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

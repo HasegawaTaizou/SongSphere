@@ -1,0 +1,40 @@
+@media (max-width: 1260px) {
+  .musics-introdution {
+    border: 0;
+    border-bottom: 2px solid var(--secondary-color);
+    align-items: center;
+  }
+
+  .music__title {
+    margin-top: 32px;
+  }
+
+  .music__image {
+    width: 312px;
+    height: 264px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 450px) {
+  .music-container {
+    width: 232px;
+    height: 64px;
+    padding: 0px 12px;
+    gap: 0px;
+  }
+
+  .music__image {
+    width: 224px;
+    height: 224px;
+  }
+
+  .music-container > i {
+    font-size: 1.25rem;
+  }
+
+  .music__text {
+    text-align: center;
+    font-size: 1.25rem;
+  }
+}

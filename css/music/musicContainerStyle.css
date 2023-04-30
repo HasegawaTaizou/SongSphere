@@ -1,0 +1,26 @@
+.musics-container {
+  padding: 32px 0px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.music-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 372px;
+  height: 92px;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+}
+
+.music-container > i {
+  font-size: 1.5rem;
+}
+
+.music__text {
+  font-size: 1.5rem;
+}
