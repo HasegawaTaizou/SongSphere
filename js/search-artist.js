@@ -1,7 +1,9 @@
 "use strict";
 
 export const searchArtist = async function () {
-  const url = "https://www.vagalume.com.br/matue/index.js";
+  const artistName = localStorage.getItem("artistName");
+
+  const url = `https://www.vagalume.com.br/${artistName}/index.js`;
   const response = await fetch(url);
 
   const data = await response.json();
