@@ -32,11 +32,23 @@
     <link rel="stylesheet" href="./css/home/search/searchInputStyle.css" />
     <link
       rel="stylesheet"
-      href="./css/home/result-error/resultErrorStyle.css"
+      href="./css/home/result-successful/resultSuccessfulStyle.css"
     />
     <link
       rel="stylesheet"
-      href="./css/home/result-error/resultErrorTextStyle.css"
+      href="./css/home/result-successful/resultSuccessfulTextStyle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/home/result-successful/resultSuccessfulImageStyle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/home/result-successful/resultSuccessfulInformationStyle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/home/result-successful/resultSuccessfulAditionalInformationStyle.css"
     />
     <link rel="stylesheet" href="./css/footer/footerStyle.css" />
     <link rel="stylesheet" href="./css/footer/footerInformationStyle.css" />
@@ -47,7 +59,7 @@
     <link rel="stylesheet" href="./css/home/search/searchResponsiveStyle.css" />
     <link
       rel="stylesheet"
-      href="./css/home/result-error/resultErrorResponsiveStyle.css"
+      href="./css/home/result-successful/resultSuccessfulResponsiveStyle.css"
     />
     <link rel="stylesheet" href="./css/footer/footerResponsiveStyle.css" />
   </head>
@@ -87,13 +99,41 @@
             class="search__image"
           />
         </div>
-        <div class="result__error-container">
-          <h3 class="result__error-text">ARTISTA NÃO ENCONTRADO</h3>
+        <div class="result-successful-container">
+          <h3 class="result__successful-text">MATUÊ</h3>
           <img
-            src="./img/songsphere-search-error.png"
-            alt="Error Image"
-            class="result__error-image"
+            src="./img/matue.png"
+            alt="Successful Image"
+            class="result__successful-image"
           />
+          <ul class="result__informations-container">
+            <li class="information-container">
+              <i class="fa-solid fa-trophy"></i>
+              <span class="information-ranking__text">Ranking: </span>
+            </li>
+            <li class="information-container">
+              <i class="fa-solid fa-eye"></i>
+              <span class="information-views__text">Visualizações: </span>
+            </li>
+            <li class="information-container">
+              <i class="fa-solid fa-user-group"></i>
+              <span class="information-fas__text">Fãs: </span>
+            </li>
+            <li class="information-container">
+              <i class="fa-solid fa-bullseye"></i>
+              <span class="information-score__text">Pontuação: </span>
+            </li>
+          </ul>
+          <ul class="result__additional-informations-container">
+            <li class="additional-information-container">
+              <i class="fa-solid fa-music"></i>
+              <span class="additional-information__text">MÚSICAS</span>
+            </li>
+            <li class="additional-information-container">
+              <i class="fa-solid fa-compact-disc"></i>
+              <span class="additional-information__text">ÁLBUNS</span>
+            </li>
+          </ul>
         </div>
       </div>
     </main>

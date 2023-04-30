@@ -1,0 +1,24 @@
+.result__additional-informations-container {
+  grid-area: aditional-informations;
+  display: flex;
+  gap: 48px;
+}
+
+.additional-information-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 256px;
+  height: 84px;
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+}
+
+.additional-information-container > i {
+  font-size: 2rem;
+}
+
+.additional-information__text {
+  font-size: 2rem;
+}

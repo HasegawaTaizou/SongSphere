@@ -1,0 +1,6 @@
+.result__successful-text {
+  grid-area: title;
+  font-size: 3rem;
+  font-weight: normal;
+  margin-top: 42px;
+}

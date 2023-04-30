@@ -1,0 +1,21 @@
+.result__informations-container {
+  grid-area: informations;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.information-container {
+  display: flex;
+  gap: 12px;
+}
+
+.information-container > i {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+}
+
+.information-container > span {
+  font-size: 1.5rem;
+}

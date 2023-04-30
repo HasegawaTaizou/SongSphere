@@ -1,0 +1,10 @@
+.result-successful-container {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "image informations"
+    "aditional-informations aditional-informations";
+  justify-content: center;
+  justify-items: center;
+  gap: 32px;
+}
