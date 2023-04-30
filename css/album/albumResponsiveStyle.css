@@ -18,10 +18,9 @@
 
 @media (max-width: 450px) {
   .album-container {
-    width: 232px;
+    width: 214px;
     height: 64px;
     padding: 0px 12px;
-    gap: 0px;
   }
 
   .album__image {

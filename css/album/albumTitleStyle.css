@@ -2,6 +2,7 @@
   font-size: 2.25rem;
   font-weight: normal;
   user-select: none;
+  margin-bottom: 32px;
 }
 
 .album__title::before {
