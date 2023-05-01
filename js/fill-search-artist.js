@@ -143,7 +143,7 @@ export const fillSearchArtist = async function () {
     artistAdditionalInformationAlbumContainer
   );
 
-  artistContainer.append(
+  artistContainer.replaceChildren(
     artistName,
     artistImage,
     artistInformations,
