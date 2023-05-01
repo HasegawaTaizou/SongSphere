@@ -24,9 +24,6 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/header/headerStyle.css" />
-    <link rel="stylesheet" href="./css/header/headerTitleStyle.css" />
-    <link rel="stylesheet" href="./css/header/headerNavigationStyle.css" />
     <link rel="stylesheet" href="./css/home/search/searchStyle.css" />
     <link rel="stylesheet" href="./css/home/search/searchTitleStyle.css" />
     <link rel="stylesheet" href="./css/home/search/searchInputStyle.css" />
@@ -54,7 +51,6 @@
     <link rel="stylesheet" href="./css/footer/footerInformationStyle.css" />
     <link rel="stylesheet" href="./css/footer/footerCopyrightStyle.css" />
     <link rel="stylesheet" href="./css/footer/footerSocialMediaStyle.css" />
-    <link rel="stylesheet" href="./css/header/headerResponsiveStyle.css" />
     <link rel="stylesheet" href="./css/responsiveStyle.css" />
     <link rel="stylesheet" href="./css/home/search/searchResponsiveStyle.css" />
     <link
@@ -62,34 +58,13 @@
       href="./css/home/result-successful/resultSuccessfulResponsiveStyle.css"
     />
     <link rel="stylesheet" href="./css/footer/footerResponsiveStyle.css" />
+    <script src="./js/app.js" defer type="module"></script>
     <script src="./js/fill-search-artist.js" defer type="module"></script>
     <script src="./js/get-artist.js" defer></script>
+    <script src="./js/components/header/header.js" defer type="module"></script>
   </head>
   <body>
-    <header>
-      <a href="./index.html">
-        <img
-          class="songsphere__logo"
-          src="./img/songsphere-logo.png"
-          alt="SongSphere Logo"
-        />
-      </a>
-      <div class="songsphere__title-container">
-        <h1 class="title__text">SongSphere</h1>
-        <i class="fa-solid fa-play"></i>
-      </div>
-      <nav class="songsphere__navigation-container">
-        <ul class="navigations">
-          <li class="navigation">
-            <a href="#" class="navigation__link">Sobre</a>
-          </li>
-          <li class="navigation">
-            <a href="#" class="navigation__link">Copyright</a>
-          </li>
-        </ul>
-      </nav>
-      <i class="fa-solid fa-bars" id="menu"></i>
-    </header>
+    <header-custom></header-custom>
     <main>
       <div class="content">
         <div class="search-container">
@@ -106,27 +81,9 @@
       </div>
     </main>
     <footer>
-      <ul class="informations-container">
-        <li class="information">
-          <i class="fas fa-phone-alt"></i>
-          <span class="information__text">(11) 4774-4700</span>
-        </li>
-        <li class="information">
-          <i class="fas fa-envelope"></i>
-          <span class="information__text">songsphere@gmail.com</span>
-        </li>
-        <li class="information">
-          <i class="fas fa-map-marker-alt"></i>
-          <span class="information__text">Rua dos Cafés, Bauru</span>
-        </li>
-      </ul>
-      <p class="copyright__text">Copyright © 2022 | Caio Palermo</p>
-      <nav class="social-medias-container">
-        <a href="#" class="social-media"><i class="fab fa-youtube"></i></a>
-        <a href="#" class="social-media"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="social-media"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="social-media"><i class="fab fa-facebook-f"></i></a>
-      </nav>
+      <informations-custom></informations-custom>
+      <copyright-custom></copyright-custom>
+      <social-media></social-media>
     </footer>
   </body>
 </html>
