@@ -1,6 +1,9 @@
 "use strict";
 
-class copyright extends HTMLElement {
+import { getFooterCopyrightStyle } from "../components-style/footer/footer-copyright-style.js";
+import { getFooterCopyrightResponsiveStyle } from "../components-style/footer/footer-copyright-responsive-style.js";
+
+export class copyright extends HTMLElement {
   constructor() {
     super();
     this.shadow = this.attachShadow({ mode: "open" });
@@ -14,12 +17,8 @@ class copyright extends HTMLElement {
   styles() {
     const css = document.createElement("style");
     css.textContent = `
-      .copyright__text {
-        display: flex;
-        align-items: center;
-        user-select: none;
-        font-size: 1.25rem;
-      }
+      ${getFooterCopyrightStyle()}
+      ${getFooterCopyrightResponsiveStyle()}
       `;
 
     return css;

@@ -1,0 +1,19 @@
+"use strict";
+
+export const getFooterResponsiveStyle = function () {
+  return `
+  @media (max-width: 750px) {
+    footer {
+      padding: 24px 12px;
+      display: grid;
+      grid-template-areas:
+        "copyright"
+        "informations"
+        "social";
+      grid-template-rows: auto auto auto;
+      justify-content: center;
+      gap: 24px;
+    }
+  }
+  `;
+};

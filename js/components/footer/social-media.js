@@ -1,16 +1,19 @@
 "use strict";
 
-import { getFontAwesomeStyles } from "../get-font-awesome.js";
-import { getResetStyle } from "../get-reset-style.js";
+import { getResetStyle } from "../components-style/get-reset-style.js";
+import { getFontAwesomeStyle } from "../components-style/get-font-awesome.js";
 
-class socialMedia extends HTMLElement {
+import { getFooterSocialMediaStyle } from "../components-style/footer/footer-social-media-style.js";
+import { getFooterSocialMediaResponsiveStyle } from "../components-style/footer/footer-social-media-responsive-style.js";
+
+export class socialMedia extends HTMLElement {
   constructor() {
     super();
     this.shadow = this.attachShadow({ mode: "open" });
   }
 
   connectedCallback() {
-    this.shadow.appendChild(getFontAwesomeStyles());
+    this.shadow.appendChild(getFontAwesomeStyle());
     this.shadow.appendChild(this.component());
     this.shadow.appendChild(this.styles());
   }
@@ -19,33 +22,8 @@ class socialMedia extends HTMLElement {
     const css = document.createElement("style");
     css.textContent = `
       ${getResetStyle()}
-      
-      .social-medias-container {
-        display: flex;
-        gap: 20px;
-        align-items: center;
-      }
-      
-      .social-media {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 48px;
-        height: 48px;
-        border-radius: 100%;
-        border: 1px solid var(--primary-color);
-      }
-      
-      .social-media:hover {
-        background-color: #ff1ea9ec;
-        transition: all 0.5s;
-      }
-      
-      .social-media > i {
-        font-size: 1.375rem;
-        color: var(--primary-color);
-        line-height: 0;
-      }
+      ${getFooterSocialMediaStyle()}
+      ${getFooterSocialMediaResponsiveStyle()}
       `;
 
     return css;

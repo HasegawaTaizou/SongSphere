@@ -1,15 +1,18 @@
 "use strict";
 
-import { getFontAwesomeStyles } from "../get-font-awesome.js";
+import { getFontAwesomeStyle } from "../components-style/get-font-awesome.js";
 
-class informations extends HTMLElement {
+import { getFooterInformationStyle } from "../components-style/footer/footer-information-style.js";
+import { getFooterInformationResponsiveStyle } from "../components-style/footer/footer-information-responsive-style.js";
+
+export class informations extends HTMLElement {
   constructor() {
     super();
     this.shadow = this.attachShadow({ mode: "open" });
   }
 
   connectedCallback() {
-    this.shadow.appendChild(getFontAwesomeStyles());
+    this.shadow.appendChild(getFontAwesomeStyle());
     this.shadow.appendChild(this.component());
     this.shadow.appendChild(this.styles());
   }
@@ -17,18 +20,8 @@ class informations extends HTMLElement {
   styles() {
     const css = document.createElement("style");
     css.textContent = `
-      .informations-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 8px;
-      }
-      
-      .information {
-        display: flex;
-        gap: 24px;
-        user-select: none;
-      }
+      ${getFooterInformationStyle()}
+      ${getFooterInformationResponsiveStyle()}
       `;
 
     return css;
