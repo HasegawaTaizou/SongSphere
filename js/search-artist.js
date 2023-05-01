@@ -33,5 +33,3 @@ export const searchArtist = async function () {
     albums: albums,
   };
 };
-
-searchArtist();

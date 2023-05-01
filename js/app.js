@@ -1,9 +1,13 @@
 "use strict";
 
-// import { copyright } from "./components/copyright.js";
-// import { socialMedia } from "./components/social-media.js";
-// import { fillMusicArtist } from "./fill-music-artist.js";
-// import { fillSearchArtist } from "./fill-search-artist.js";
+import { fillAlbumArtist } from "./fill-album-artist.js";
+import { fillMusicArtist } from "./fill-music-artist.js";
+import { fillSearchArtist } from "./fill-search-artist.js";
+import { getArtist } from "./get-artist.js";
+import { route } from "./router.js";
 
-// fillSearchArtist();
-// fillMusicArtist();
+fillAlbumArtist;
+fillMusicArtist;
+fillSearchArtist;
+getArtist;
+route;

@@ -39,5 +39,3 @@ export const fillAlbumArtist = async function () {
 
   albums.append(albumsContainer);
 };
-
-fillAlbumArtist();

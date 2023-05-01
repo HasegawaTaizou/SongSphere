@@ -98,10 +98,7 @@ export const fillSearchArtist = async function () {
   artistAdditionalInformationMusicContainer.classList.add(
     "additional-information-container"
   );
-  artistAdditionalInformationMusicContainer.setAttribute(
-    "href",
-    "./music.html"
-  );
+  artistAdditionalInformationMusicContainer.setAttribute("href", "/music");
   const artistAdditionalInformationMusicIcon = document.createElement("i");
   artistAdditionalInformationMusicIcon.classList.add(faSolid);
   artistAdditionalInformationMusicIcon.classList.add("fa-music");
@@ -120,10 +117,7 @@ export const fillSearchArtist = async function () {
   artistAdditionalInformationAlbumContainer.classList.add(
     "additional-information-container"
   );
-  artistAdditionalInformationAlbumContainer.setAttribute(
-    "href",
-    "./album.html"
-  );
+  artistAdditionalInformationAlbumContainer.setAttribute("href", "/album");
   const artistAdditionalInformationAlbumIcon = document.createElement("i");
   artistAdditionalInformationAlbumIcon.classList.add(faSolid);
   artistAdditionalInformationAlbumIcon.classList.add("fa-compact-disc");
@@ -150,5 +144,3 @@ export const fillSearchArtist = async function () {
     artistAditionalInformationsContainer
   );
 };
-
-fillSearchArtist();
