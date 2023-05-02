@@ -11,7 +11,11 @@ const routes = {
   "/album": "/pages/album.html",
 };
 
-export const route = async function () {
+console.log("alo");
+
+export const route = async function (event) {
+  event.preventDefault();
+  console.log("route");
   window.event.preventDefault();
   window.history.pushState({}, "", window.event.target.href);
   console.log(window.event.target.href);
@@ -26,12 +30,18 @@ export const route = async function () {
   console.log(response);
 
   const html = await response.text();
-
   console.log(html);
 
-  document.getElementById("root").innerHTML = html;
+  document.querySelector(".content").innerHTML = html;
 };
 
+window.route = route;
+
+console.log(artistAditionalInformationContainers);
 artistAditionalInformationContainers.forEach((container) => {
-  container.addEventListener("click", route);
+  console.log(container);
+  // container.addEventListener("click", route);
+  container.addEventListener("click", () => {
+    console.log("click");
+  });
 });
