@@ -1,6 +1,9 @@
 "use strict";
 
+import { route } from "./router.js";
 import { searchArtist } from "./search-artist.js";
+
+route;
 
 export const fillSearchArtist = async function () {
   const artistData = await searchArtist();
@@ -143,4 +146,16 @@ export const fillSearchArtist = async function () {
     artistInformations,
     artistAditionalInformationsContainer
   );
+
+  const artistAditionalInformationContainers = document.querySelectorAll(
+    ".additional-information-container"
+  );
+  console.log(artistAditionalInformationContainers);
+
+  artistAditionalInformationContainers.forEach((container) => {
+    container.addEventListener("click", () => {
+      console.log("click");
+    });
+    container.addEventListener("click", route);
+  });
 };
