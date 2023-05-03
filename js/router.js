@@ -1,47 +1,36 @@
 "use strict";
 
-const artistAditionalInformationContainers = document.querySelectorAll(
-  ".additional-information-container"
-);
-
 const routes = {
   "/": "/pages/index.html",
   "/search": "/pages/search.html",
-  "/music": "/pages/music.html",
+  "/music": "/pages/music.js",
   "/album": "/pages/album.html",
 };
 
-console.log("alo");
-
-export const route = async function (event) {
-  console.log("route");
+export const route = () => {
   window.event.preventDefault();
   window.history.pushState({}, "", window.event.target.href);
-  console.log(window.event.target.href);
-
-  const path = window.location.pathname;
-  console.log(path);
-
-  const route = routes[path];
-  console.log(routes[path]);
-
-  const response = await fetch(route);
-  console.log(response);
-
-  const html = await response.text();
-  console.log(html);
-
-  document.querySelector(".content").innerHTML = html;
+  handleLocation();
 };
 
+const handleLocation = async () => {
+  const path = window.location.pathname;
+  const route = routes[path];
+  const { page } = await import(route);
+
+  console.log(page());
+
+  document.getElementById("root").replaceChildren(page());
+};
+
+window.onpopstate = handleLocation;
 window.route = route;
 
-console.log(artistAditionalInformationContainers);
+handleLocation();
 
-artistAditionalInformationContainers.forEach((container) => {
-  console.log(container);
-  container.addEventListener("click", route);
-  container.addEventListener("click", () => {
-    console.log("click");
-  });
-});
+// console.log(artistAditionalInformationContainers);
+
+// artistAditionalInformationContainers.forEach((container) => {
+//   console.log(container);
+//   container.addEventListener("click", route);
+// });

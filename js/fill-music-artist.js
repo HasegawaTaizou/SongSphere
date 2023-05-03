@@ -3,6 +3,7 @@
 import { searchArtist } from "./search-artist.js";
 
 export const fillMusicArtist = async function () {
+  console.log("fill search music");
   const artistData = await searchArtist();
 
   const musics = document.querySelector(".musics");
