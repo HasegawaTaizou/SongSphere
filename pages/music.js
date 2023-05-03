@@ -1,6 +1,8 @@
 "use strict";
 
-export function page() {
+export async function page() {
+  console.log('page music');
+  
   const content = document.querySelector(".content");
 
   const musicsIntroductions = document.createElement("div");

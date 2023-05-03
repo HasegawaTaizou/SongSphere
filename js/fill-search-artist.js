@@ -120,7 +120,7 @@ export const fillSearchArtist = async function () {
   artistAdditionalInformationAlbumContainer.classList.add(
     "additional-information-container"
   );
-  artistAdditionalInformationAlbumContainer.setAttribute("href", "/album");
+  artistAdditionalInformationAlbumContainer.setAttribute("href", "/verde");
   const artistAdditionalInformationAlbumIcon = document.createElement("i");
   artistAdditionalInformationAlbumIcon.classList.add(faSolid);
   artistAdditionalInformationAlbumIcon.classList.add("fa-compact-disc");

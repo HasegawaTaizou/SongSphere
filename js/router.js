@@ -5,6 +5,7 @@ const routes = {
   "/search": "/pages/search.html",
   "/music": "/pages/music.js",
   "/album": "/pages/album.html",
+  "/verde": "/pages/verde.html",
 };
 
 export const route = () => {
