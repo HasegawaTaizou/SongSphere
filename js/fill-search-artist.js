@@ -166,3 +166,5 @@ export const fillSearchArtist = async function () {
   //   container.addEventListener("click", route);
   // });
 };
+
+fillSearchArtist();

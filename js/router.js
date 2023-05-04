@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 
 // const routes = {
 //   // "/index.html": "/pages/successful.html",
@@ -8,6 +8,33 @@
 //   "/album": "/pages/album.html",
 //   "/verde": "/pages/verde.html",
 // };
+
+const routes = {
+  // "/index.html": "/pages/successful.html",
+  //   "/index.html": "../index.html",
+  "/about": "/pages/about.html",
+};
+
+export const route = () => {
+  window.event.preventDefault();
+  window.history.pushState({}, "", window.event.target.href);
+  handleLocation();
+};
+console.log("route");
+const handleLocation = async () => {
+  const path = window.location.pathname;
+  const route = routes[path];
+  console.log(route);
+  const response = await fetch(route);
+  const html = await response.text();
+
+  document.getElementById("root").innerHTML = html;
+};
+
+window.onpopstate = handleLocation;
+window.route = route;
+
+handleLocation();
 
 // export const route = () => {
 //   window.event.preventDefault();
@@ -30,9 +57,9 @@
 
 // handleLocation();
 
-// // console.log(artistAditionalInformationContainers);
+// console.log(artistAditionalInformationContainers);
 
-// // artistAditionalInformationContainers.forEach((container) => {
-// //   console.log(container);
-// //   container.addEventListener("click", route);
-// // });
+// artistAditionalInformationContainers.forEach((container) => {
+//   console.log(container);
+//   container.addEventListener("click", route);
+// });
