@@ -15,16 +15,22 @@ const routes = {
   "/about": "/pages/about.html",
 };
 
-export const route = () => {
+const route = () => {
+  console.log('route');
+  
   window.event.preventDefault();
   window.history.pushState({}, "", window.event.target.href);
   handleLocation();
 };
-console.log("route");
+
 const handleLocation = async () => {
+  
   const path = window.location.pathname;
+  console.log('path: ' + path);
+  
   const route = routes[path];
-  console.log(route);
+  console.log('route: ' + route);
+  
   const response = await fetch(route);
   const html = await response.text();
 

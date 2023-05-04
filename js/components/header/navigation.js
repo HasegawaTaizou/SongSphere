@@ -50,9 +50,9 @@ export class navigation extends HTMLElement {
     navigationCopyright.classList.add("navigation");
     const navigationCopyrightLink = document.createElement("a");
     navigationCopyrightLink.classList.add("navigation__link");
-    navigationCopyrightLink.setAttribute("href", "#footer");
-    // navigationCopyrightLink.setAttribute("href", "/about");
-    // navigationCopyrightLink.setAttribute("onclick", "route()");
+    // navigationCopyrightLink.setAttribute("href", "#footer");
+    navigationCopyrightLink.setAttribute("href", "/about");
+    navigationCopyrightLink.setAttribute("onclick", "route()");
     navigationCopyrightLink.textContent = "Copyright";
 
     navigationCopyright.append(navigationCopyrightLink);
