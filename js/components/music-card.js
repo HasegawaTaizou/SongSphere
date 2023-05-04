@@ -11,17 +11,16 @@ export class musicCard extends HTMLElement {
     this.shadow = this.attachShadow({ mode: "open" });
   }
 
-  async connectedCallback() {
+  connectedCallback() {
     this.shadow.appendChild(getFontAwesomeStyle());
-    this.shadow.appendChild(await this.component());
+    this.shadow.appendChild(this.component());
     this.shadow.appendChild(this.styles());
   }
 
   styles() {
     const css = document.createElement("style");
     css.textContent = `
-      ${getHeaderMenuStyle()}
-      ${getHeaderMenuResponsiveStyle()}
+      
       `;
 
     return css;
@@ -66,7 +65,10 @@ export class musicCard extends HTMLElement {
 
     musics.append(musicsContainer);
 
-    console.log("fill music art");
+    console.log("music card component");
+
+    console.log(musics);
+    
     return musics;
   }
 }

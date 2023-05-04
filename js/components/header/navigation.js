@@ -4,9 +4,9 @@ import { getResetStyle } from "../components-style/get-reset-style.js";
 
 import { getHeaderNavigationStyle } from "../components-style/header/header-navigation-style.js";
 import { getHeaderNavigationResponsiveStyle } from "../components-style/header/header-navigation-responsive-style.js";
-import { menu } from "./menu.js";
+// import { menu } from "./menu.js";
 
-const menuObject = new menu();
+// const menuObject = new menu();
 
 export class navigation extends HTMLElement {
   constructor() {
@@ -58,7 +58,8 @@ export class navigation extends HTMLElement {
 
     navigations.append(navigationAbout, navigationCopyright);
 
-    navigationContainer.append(navigations, menuObject);
+    // navigationContainer.append(navigations, menuObject);
+    navigationContainer.append(navigations);
 
     return navigationContainer;
   }

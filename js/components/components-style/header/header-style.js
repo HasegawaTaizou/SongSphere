@@ -8,6 +8,7 @@ export const getHeaderStyle = function () {
     align-items: center;
     background-color: var(--secondary-color);
     padding: 0px 32px;
+    min-height: 96px;
   }
   `;
 };

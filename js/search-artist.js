@@ -22,8 +22,6 @@ export const searchArtist = async function () {
     };
   });
 
-  console.log("search artist");
-
   return {
     name: data.artist.desc,
     image: data.artist.pic_medium,
