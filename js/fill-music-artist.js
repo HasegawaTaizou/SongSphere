@@ -1,49 +1,54 @@
 "use strict";
 
+import { musicCard } from "./components/music-card.js";
 import { searchArtist } from "./search-artist.js";
 
+const musicCardObject = new musicCard();
+
 export const fillMusicArtist = async function () {
-  console.log("fill search music");
-  const artistData = await searchArtist();
-  console.log(artistData);
+  // console.log("fill search music");
+  // const artistData = await searchArtist();
+  // console.log(artistData);
 
-  const musics = document.querySelector(".musics");
-  console.log(musics);
+  // const musics = document.querySelector(".musics");
+  // console.log(musics);
 
-  const musicsContainer = document.createElement("ul");
-  musicsContainer.classList.add("musics-container");
-  console.log(musicsContainer);
+  // const musicsContainer = document.createElement("ul");
+  // musicsContainer.classList.add("musics-container");
+  // console.log(musicsContainer);
 
-  const faSolid = "fa-solid";
+  // const faSolid = "fa-solid";
 
-  let musicContainer;
+  // let musicContainer;
 
-  let musicIcon;
-  let musicText;
+  // let musicIcon;
+  // let musicText;
 
-  artistData.musics.forEach((music) => {
-    musicContainer = document.createElement("a");
-    musicContainer.classList.add("music-container");
-    musicContainer.setAttribute(
-      "href",
-      `https://www.vagalume.com.br/${music.link}`
-    );
+  // artistData.musics.forEach((music) => {
+  //   musicContainer = document.createElement("a");
+  //   musicContainer.classList.add("music-container");
+  //   musicContainer.setAttribute(
+  //     "href",
+  //     `https://www.vagalume.com.br/${music.link}`
+  //   );
 
-    musicIcon = document.createElement("i");
-    musicIcon.classList.add(faSolid);
-    musicIcon.classList.add("fa-music");
+  //   musicIcon = document.createElement("i");
+  //   musicIcon.classList.add(faSolid);
+  //   musicIcon.classList.add("fa-music");
 
-    musicText = document.createElement("span");
-    musicText.classList.add("music__text");
-    musicText.textContent = music.name;
+  //   musicText = document.createElement("span");
+  //   musicText.classList.add("music__text");
+  //   musicText.textContent = music.name;
 
-    musicContainer.append(musicIcon, musicText);
-    musicsContainer.append(musicContainer);
-  });
+  //   musicContainer.append(musicIcon, musicText);
+  //   musicsContainer.append(musicContainer);
+  // });
 
-  musics.append(musicsContainer);
+  // musics.append(musicsContainer);
+
+  // console.log("fill music art");
+  // return musics;
+  return musicCardObject;
 };
 
 fillMusicArtist();
-
-console.log("fill music");
