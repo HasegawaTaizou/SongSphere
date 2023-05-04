@@ -41,4 +41,6 @@ export const fillMusicArtist = async function () {
   musics.append(musicsContainer);
 };
 
+fillMusicArtist();
+
 console.log("fill music");
