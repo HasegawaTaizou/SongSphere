@@ -27,7 +27,7 @@ export const fillAlbumArtist = async function () {
 
     albumIcon = document.createElement("i");
     albumIcon.classList.add(faSolid);
-    albumIcon.classList.add("fa-compact-disc");
+    albumIcon.classList.add("fa-music");
 
     albumText = document.createElement("span");
     albumText.classList.add("album__text");
@@ -39,3 +39,5 @@ export const fillAlbumArtist = async function () {
 
   albums.append(albumsContainer);
 };
+
+fillAlbumArtist();
