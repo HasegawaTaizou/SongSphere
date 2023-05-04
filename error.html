@@ -7,7 +7,7 @@
     <meta name="description" content="Website about SongSphere." />
     <link
       rel="shortcut icon"
-      href="../img/songsphere-logo.png"
+      href="./img/songsphere-logo.png"
       type="image/x-icon"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,24 +21,44 @@
       crossorigin="anonymous"
     ></script>
     <title>SongSphere</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/app.js" defer type="module"></script>
-    <script src="./js/get-artist.js" defer type="module"></script>
-    <script
-      src="../js/components/header/header.js"
-      defer
-      type="module"
-    ></script>
-    <script
-      src="../js/components/footer/footer.js"
-      defer
-      type="module"
-    ></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header/headerStyle.css" />
+    <link rel="stylesheet" href="./css/header/headerTitleStyle.css" />
+    <link rel="stylesheet" href="./css/header/headerNavigationStyle.css" />
+    <link rel="stylesheet" href="./css/home/search/searchStyle.css" />
+    <link rel="stylesheet" href="./css/home/search/searchTitleStyle.css" />
+    <link rel="stylesheet" href="./css/home/search/searchInputStyle.css" />
+    <link
+      rel="stylesheet"
+      href="./css/home/result-error/resultErrorStyle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/home/result-error/resultErrorTextStyle.css"
+    />
+    <link rel="stylesheet" href="./css/footer/footerStyle.css" />
+    <link rel="stylesheet" href="./css/footer/footerInformationStyle.css" />
+    <link rel="stylesheet" href="./css/footer/footerCopyrightStyle.css" />
+    <link rel="stylesheet" href="./css/footer/footerSocialMediaStyle.css" />
+    <link rel="stylesheet" href="./css/header/headerResponsiveStyle.css" />
+    <link rel="stylesheet" href="./css/responsiveStyle.css" />
+    <link rel="stylesheet" href="./css/home/search/searchResponsiveStyle.css" />
+    <link
+      rel="stylesheet"
+      href="./css/home/result-error/resultErrorResponsiveStyle.css"
+    />
+    <link rel="stylesheet" href="./css/footer/footerResponsiveStyle.css" />
   </head>
   <body>
-    <!-- <header>
+    <header>
       <a href="./index.html">
-        <img src="./img/songsphere-logo.png" alt="SongSphere Logo" />
+        <img
+          class="songsphere__logo"
+          src="./img/songsphere-logo.png"
+          alt="SongSphere Logo"
+        />
       </a>
       <div class="songsphere__title-container">
         <h1 class="title__text">SongSphere</h1>
@@ -54,20 +74,27 @@
           </li>
         </ul>
       </nav>
-    </header> -->
-    <header-custom></header-custom>
+      <i class="fa-solid fa-bars" id="menu"></i>
+    </header>
     <main>
-      <div class="content" id="root">
+      <div class="content">
         <div class="search-container">
           <h2 class="search__title">Pesquise seu artista</h2>
           <input class="search__input" type="text" placeholder="Artista" />
           <img
-            src="../img/songsphere-search-image.png"
+            src="./img/songsphere-search-image.png"
             alt="Search Image"
             class="search__image"
           />
         </div>
-        <div class="result-successful-container"></div>
+        <div class="result__error-container">
+          <h3 class="result__error-text">ARTISTA NÃO ENCONTRADO</h3>
+          <img
+            src="./img/songsphere-search-error.png"
+            alt="Error Image"
+            class="result__error-image"
+          />
+        </div>
       </div>
     </main>
     <footer>

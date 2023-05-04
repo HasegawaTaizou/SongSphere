@@ -1,37 +1,38 @@
-"use strict";
+// "use strict";
 
-const routes = {
-  "/": "/pages/index.html",
-  "/search": "/pages/search.html",
-  "/music": "/pages/music.js",
-  "/album": "/pages/album.html",
-  "/verde": "/pages/verde.html",
-};
+// const routes = {
+//   // "/index.html": "/pages/successful.html",
+//   "/index.html": "/pages/successful.js",
+//   "/search": "/pages/search.html",
+//   "/music": "/pages/music.html",
+//   "/album": "/pages/album.html",
+//   "/verde": "/pages/verde.html",
+// };
 
-export const route = () => {
-  window.event.preventDefault();
-  window.history.pushState({}, "", window.event.target.href);
-  handleLocation();
-};
+// export const route = () => {
+//   window.event.preventDefault();
+//   window.history.pushState({}, "", window.event.target.href);
+//   handleLocation();
+// };
 
-const handleLocation = async () => {
-  const path = window.location.pathname;
-  const route = routes[path];
-  const { page } = await import(route);
+// const handleLocation = async () => {
+//   const path = window.location.pathname;
+//   const route = routes[path];
+//   const { page } = await import(route);
 
-  console.log(page());
+//   console.log(page());
 
-  document.getElementById("root").replaceChildren(page());
-};
+//   document.getElementById("root").replaceChildren(page());
+// };
 
-window.onpopstate = handleLocation;
-window.route = route;
+// window.onpopstate = handleLocation;
+// window.route = route;
 
-handleLocation();
+// handleLocation();
 
-// console.log(artistAditionalInformationContainers);
+// // console.log(artistAditionalInformationContainers);
 
-// artistAditionalInformationContainers.forEach((container) => {
-//   console.log(container);
-//   container.addEventListener("click", route);
-// });
+// // artistAditionalInformationContainers.forEach((container) => {
+// //   console.log(container);
+// //   container.addEventListener("click", route);
+// // });

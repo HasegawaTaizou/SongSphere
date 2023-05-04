@@ -23,3 +23,11 @@
 @import url("./album/albumTitleStyle.css");
 @import url("./album/albumContainerStyle.css");
 @import url("./album/albumResponsiveStyle.css");
+@import url("./footer/footerStyle.css");
+@import url("./footer/footerInformationStyle.css");
+@import url("./footer/footerInformationResponsiveStyle.css");
+@import url("./footer/footerCopyrightStyle.css");
+@import url("./footer/footerCopyrightResponsiveStyle.css");
+@import url("./footer/footerSocialMediaStyle.css");
+@import url("./footer/footerSocialMediaResponsiveStyle.css");
+@import url("./footer/footerResponsiveStyle.css");

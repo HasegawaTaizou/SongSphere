@@ -1,9 +1,6 @@
 "use strict";
 
-import { route } from "./router.js";
 import { searchArtist } from "./search-artist.js";
-
-route;
 
 export const fillSearchArtist = async function () {
   const artistData = await searchArtist();
@@ -101,7 +98,11 @@ export const fillSearchArtist = async function () {
   artistAdditionalInformationMusicContainer.classList.add(
     "additional-information-container"
   );
-  artistAdditionalInformationMusicContainer.setAttribute("href", "/music");
+  artistAdditionalInformationMusicContainer.setAttribute(
+    "href",
+    "./music.html"
+  );
+  // artistAdditionalInformationMusicContainer.setAttribute("onclick", "route()");
   const artistAdditionalInformationMusicIcon = document.createElement("i");
   artistAdditionalInformationMusicIcon.classList.add(faSolid);
   artistAdditionalInformationMusicIcon.classList.add("fa-music");
@@ -120,7 +121,11 @@ export const fillSearchArtist = async function () {
   artistAdditionalInformationAlbumContainer.classList.add(
     "additional-information-container"
   );
-  artistAdditionalInformationAlbumContainer.setAttribute("href", "/verde");
+  artistAdditionalInformationAlbumContainer.setAttribute(
+    "href",
+    "./album.html"
+  );
+  // artistAdditionalInformationAlbumContainer.setAttribute("onclick", "route()");
   const artistAdditionalInformationAlbumIcon = document.createElement("i");
   artistAdditionalInformationAlbumIcon.classList.add(faSolid);
   artistAdditionalInformationAlbumIcon.classList.add("fa-compact-disc");
@@ -147,15 +152,17 @@ export const fillSearchArtist = async function () {
     artistAditionalInformationsContainer
   );
 
-  const artistAditionalInformationContainers = document.querySelectorAll(
-    ".additional-information-container"
-  );
-  console.log(artistAditionalInformationContainers);
+  console.log("fill search artist");
 
-  artistAditionalInformationContainers.forEach((container) => {
-    container.addEventListener("click", () => {
-      console.log("click");
-    });
-    container.addEventListener("click", route);
-  });
+  // const artistAditionalInformationContainers = document.querySelectorAll(
+  //   ".additional-information-container"
+  // );
+  // console.log(artistAditionalInformationContainers);
+
+  // artistAditionalInformationContainers.forEach((container) => {
+  //   container.addEventListener("click", () => {
+  //     console.log("click");
+  //   });
+  //   container.addEventListener("click", route);
+  // });
 };

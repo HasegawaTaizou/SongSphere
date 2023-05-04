@@ -21,50 +21,21 @@
       crossorigin="anonymous"
     ></script>
     <title>SongSphere</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/variables.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/header/headerStyle.css" />
-    <link rel="stylesheet" href="./css/header/headerTitleStyle.css" />
-    <link rel="stylesheet" href="./css/header/headerNavigationStyle.css" />
-    <link rel="stylesheet" href="./css/album/albumStyle.css" />
-    <link rel="stylesheet" href="./css/album/albumTitleStyle.css" />
-    <link rel="stylesheet" href="./css/album/albumContainerStyle.css" />
-    <link rel="stylesheet" href="./css/footer/footerStyle.css" />
-    <link rel="stylesheet" href="./css/footer/footerInformationStyle.css" />
-    <link rel="stylesheet" href="./css/footer/footerCopyrightStyle.css" />
-    <link rel="stylesheet" href="./css/footer/footerSocialMediaStyle.css" />
-    <link rel="stylesheet" href="./css/header/headerResponsiveStyle.css" />
-    <link rel="stylesheet" href="./css/responsiveStyle.css" />
-    <link rel="stylesheet" href="./css/album/albumResponsiveStyle.css" />
-    <link rel="stylesheet" href="./css/footer/footerResponsiveStyle.css" />
-    <script src="./js/fill-album-artist.js" defer type="module"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/app.js" defer type="module"></script>
+    <script
+      src="../js/components/header/header.js"
+      defer
+      type="module"
+    ></script>
+    <script
+      src="../js/components/footer/footer.js"
+      defer
+      type="module"
+    ></script>
   </head>
   <body>
-    <header>
-      <a href="./index.html">
-        <img
-          class="songsphere__logo"
-          src="./img/songsphere-logo.png"
-          alt="SongSphere Logo"
-        />
-      </a>
-      <div class="songsphere__title-container">
-        <h1 class="title__text">SongSphere</h1>
-        <i class="fa-solid fa-play"></i>
-      </div>
-      <nav class="songsphere__navigation-container">
-        <ul class="navigations">
-          <li class="navigation">
-            <a href="#" class="navigation__link">Sobre</a>
-          </li>
-          <li class="navigation">
-            <a href="#" class="navigation__link">Copyright</a>
-          </li>
-        </ul>
-      </nav>
-      <i class="fa-solid fa-bars" id="menu"></i>
-    </header>
+    <header-custom></header-custom>
     <main>
       <div class="content">
         <div class="albums-introdution">
