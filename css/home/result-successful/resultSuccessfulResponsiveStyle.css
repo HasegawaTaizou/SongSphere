@@ -47,6 +47,11 @@
 }
 
 @media (max-width: 340px) {
+
+  .result__successful-text {
+    font-size: 1.5rem;
+  }
+
   .information-container > span {
     font-size: 1rem;
   }

@@ -10,27 +10,27 @@
 // };
 
 const routes = {
-  // "/index.html": "/pages/successful.html",
-  //   "/index.html": "../index.html",
+  "/": "../index.html",
   "/about": "/pages/about.html",
 };
 
-const route = () => {
-  console.log('route');
-  
+export const route = () => {
+  console.log("route");
+
   window.event.preventDefault();
   window.history.pushState({}, "", window.event.target.href);
   handleLocation();
 };
 
+route();
+
 const handleLocation = async () => {
-  
   const path = window.location.pathname;
-  console.log('path: ' + path);
-  
+  console.log("path: " + path);
+
   const route = routes[path];
-  console.log('route: ' + route);
-  
+  console.log("route: " + route);
+
   const response = await fetch(route);
   const html = await response.text();
 
